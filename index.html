@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with the string objects</title>
+</head>
+<body>
+    <script>
+        let string = "Bill Gates is the owner of Microsoft Incorporation";
+        let char = string.charAt(5)
+
+        document.write(`${string}: ${char} is at position 5<br>`);
+        let string2 = " And Jeff Bezos is the founder of Amazon";
+        let newString = string.concat("",string2);
+        document.write(`${newString}<br>`);
+        let index = newString.indexOf("is");
+        let lastIndex = newString.lastIndexOf("is");
+        document.write(`The first position of "is" is ${index} while the last position of "is" is ${lastIndex}<br>`);
+        let newString2 = newString.replace(/is/g,"was");
+        let num = 36;
+        document.write(`${newString2}<br>`);
+        document.write(`${newString.search("is")}<br>`);
+        document.write(`${newString.split("")}<br>`);
+        document.write(`${newString.substring(1,4)}<br>`);
+        document.write(`${newString.toLowerCase()}<br>`);
+        document.write(`${newString.charCodeAt(13)}<br>`);
+        document.write(`${newString.endsWith("Amazon")}<br>`);
+        document.write(`${newString.includes("founder")}<br>`);
+        document.write(`${newString.match("game")}<br>`);
+        document.write(`${newString.repeat(2)}<br>`);
+        document.write(`${newString.slice(5,40)}<br>`);
+        document.write(`${newString.startsWith("Gates")}<br>`);
+        document.write(`${num.toString()}<br>`);
+        document.write(`${newString.toUpperCase()}<br>`);
+        document.write(`${newString.trim()}<br>`);
+        document.write(`${newString.valueOf()}<br>`);
+    </script>
+</body>
+</html>
